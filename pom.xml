@@ -60,10 +60,13 @@
 	
 	<dependencies>
 		<dependency>
-			<groupId>eu.openanalytics</groupId>
-			<artifactId>containerproxy</artifactId>
-			<version>0.8.4</version>
+			<groupId>containerproxy-docker</groupId>
+			<artifactId>containerproxy-docker</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}\src\lib\containerproxy-docker.jar</systemPath>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
@@ -320,6 +323,7 @@
         		</configuration>
 			</plugin>
 		</plugins>
+		<finalName>shinyproxy-docker</finalName>
 	</build>
 	
 </project>
