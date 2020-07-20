@@ -64,7 +64,7 @@
 			<artifactId>containerproxy-docker</artifactId>
 			<scope>system</scope>
 			<version>1.0</version>
-			<systemPath>${basedir}\src\lib\containerproxy-docker.jar</systemPath>
+			<systemPath>${basedir}/src/lib/containerproxy-docker.jar</systemPath>
 		</dependency>
 		
 		<dependency>
