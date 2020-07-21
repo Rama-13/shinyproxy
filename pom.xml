@@ -28,28 +28,28 @@
 		<java.version>1.8</java.version>
 	</properties>
 	
-	<distributionManagement>
+	<!-- <distributionManagement>
 		<snapshotRepository>
 			<id>oa-nexus-snapshots</id>
 			<name>OpenAnalytics Snapshots Repository</name>
 			<url>http://nexus.openanalytics.eu/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
-		<!-- <repository>
+		<repository>
 			<id>oa-nexus-releases</id>
 			<name>OpenAnalytics Release Repository</name>
 			<url>http://nexus.openanalytics.eu/nexus/content/repositories/releases</url>
-		</repository> -->
-	</distributionManagement>
+		</repository>
+	</distributionManagement> -->
 	
 	<repositories>
-		<repository>
+		<!-- <repository>
 			<id>oa-nexus-snapshots</id>
 			<name>OpenAnalytics Snapshots Repository</name>
 			<url>http://nexus.openanalytics.eu/nexus/content/repositories/snapshots</url>
 			<snapshots><enabled>true</enabled></snapshots>
 			<releases><enabled>false</enabled></releases>
 		</repository>
-		<!-- <repository>
+		<repository>
 			<id>oa-nexus-releases</id>
 			<name>OpenAnalytics Snapshots Repository</name>
 			<url>http://nexus.openanalytics.eu/nexus/content/repositories/releases</url>
@@ -68,6 +68,39 @@
 			<artifactId>containerproxy-docker</artifactId>
 			<version>1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>5.2.7.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>2.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>5.3.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>5.3.3.RELEASE</version>
+		</dependency>
+
+        
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
