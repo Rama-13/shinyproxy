@@ -66,7 +66,6 @@
 		<dependency>
 			<groupId>containerproxy-docker</groupId>
 			<artifactId>containerproxy-docker</artifactId>
-			<scope>system</scope>
 			<version>1.0</version>
 		</dependency>
 		<dependency>
